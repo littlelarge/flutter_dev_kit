@@ -1,0 +1,37 @@
+{
+	"test aaa": {
+		"scope": "dart",
+		"prefix": "ta",
+		"body": [
+			"test('should $1', () {",
+			"   // arrange",
+			"   $2",
+			"   // act",
+			"   $3",
+			"   // assert",
+			"   $0",
+			"});"
+		],
+		"description": "AAA test snippet"
+	},
+	"test group": {
+		"scope": "dart",
+		"prefix": "gt",
+		"body": [
+			"group('$1', () {",
+    		"   $0",
+			"});"
+		],
+		"description": "group test snippet"
+	},
+	"test setUp": {
+		"scope": "dart",
+		"prefix": "su",
+		"body": [
+			"setUp(() {",
+    		"   $0",
+			"});"
+		],
+		"description": "group test snippet"
+	}
+}

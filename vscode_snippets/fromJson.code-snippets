@@ -1,0 +1,9 @@
+{
+	"From Json Factory": {
+		"prefix": "fj",
+		"body": [
+			"factory ${1}.fromJson(Map<String, dynamic> json) => _$${1}FromJson(json);"
+		],
+		"description": "From Json factory"
+	}
+}

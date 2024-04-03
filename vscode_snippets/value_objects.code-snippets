@@ -1,0 +1,17 @@
+{
+	"Value Objects": {
+		"prefix": "vobj",
+		"body": [
+			"class $1 extends ValueObject<$2> {",
+			"  factory $1($2 input) {",
+			"    return $1._(",
+			"     ${0:// insert validation},",
+			"    );",
+			"  }",
+			"",
+			"  const $1._(super.value);",
+			"}",
+		],
+		"description": "Create value object"
+	},
+}
