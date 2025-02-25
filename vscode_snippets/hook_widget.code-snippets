@@ -1,0 +1,16 @@
+{
+	"Part 'Freezed' statement": {
+		"prefix": "hw",
+		"body": [
+			"class ${3:name} extends HookWidget {",
+			"  const ${3:name}({super.key});",
+			"",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Container();",
+			"  }",
+			"}"
+		],
+		"description": "Creates a filled-in freezed part statement"
+	},
+}

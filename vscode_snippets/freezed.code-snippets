@@ -16,12 +16,36 @@
 	"Freezed Data Class": {
 		"prefix": "fdc",
 		"body": [
+			"import 'package:freezed_annotation/freezed_annotation.dart';",
+			"",
+			"part '${TM_FILENAME_BASE}.freezed.dart';",
+			"",
 			"@freezed",
 			"abstract class ${1:DataClass} with _$${1:DataClass}{",
 			"  const factory ${1:DataClass}(${2}) = _${1:DataClass};",
 			"}",
 		],
 		"description": "Freezed Data Class"
+	},
+	"Freezed Data Class Failures": {
+		"prefix": "fdcf",
+		"body": [
+			"import 'package:freezed_annotation/freezed_annotation.dart';",
+			"import 'package:${3:project_name}/common/utils.dart';",
+			"",
+			"part '${TM_FILENAME_BASE}.freezed.dart';",
+			"",
+			"@freezed",
+			"abstract class ${1:FailureClass} with _$${1:FailureClass} {",
+			"  ${1:FailureClass}._() {",
+			"    ${3:project_name}Print('$error');",
+			"  }",
+			"  ",
+			"  factory ${1:FailureClass}.serverError(Object error) = _ServerError;",
+			"  factory ${1:FailureClass}.unexpected(Object error) = _Unexpected;",
+			"}"
+		],
+		"description": "Freezed Data Class Failures"
 	},
 	"Freezed Union": {
 		"prefix": "funion",

@@ -1,0 +1,9 @@
+{
+	"Freezed Data Class": {
+		"prefix": "fc",
+		"body": [
+			"factory ${1}.${2}() => const ${0};",
+		],
+		"description": "Freezed Data Class"
+	},
+}
